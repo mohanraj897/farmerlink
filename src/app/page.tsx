@@ -222,40 +222,42 @@ export default function Page() {
             </div>
 
             {/* Role Selection Tabs */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 bg-slate-100 dark:bg-zinc-950 p-1.5 rounded-2xl">
-              <button
-                onClick={() => setLoginRole('farmer')}
-                className={`py-2 text-xs font-semibold rounded-xl cursor-pointer transition-all flex flex-col items-center justify-center gap-1 ${
-                  loginRole === 'farmer' 
-                    ? 'bg-white dark:bg-zinc-850 text-primary-green shadow-sm' 
-                    : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100'
-                }`}
-              >
-                <Leaf className="w-4 h-4" />
-                Farmer
-              </button>
-              <button
-                onClick={() => setLoginRole('company')}
-                className={`py-2 text-xs font-semibold rounded-xl cursor-pointer transition-all flex flex-col items-center justify-center gap-1 ${
-                  loginRole === 'company' 
-                    ? 'bg-white dark:bg-zinc-850 text-corporate-blue shadow-sm' 
-                    : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100'
-                }`}
-              >
-                <Building2 className="w-4 h-4" />
-                Company
-              </button>
-              <button
-                onClick={() => setLoginRole('admin')}
-                className={`py-2 text-xs font-semibold rounded-xl cursor-pointer transition-all flex flex-col items-center justify-center gap-1 ${
-                  loginRole === 'admin' 
-                    ? 'bg-white dark:bg-zinc-850 text-amber-500 shadow-sm' 
-                    : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100'
-                }`}
-              >
-                <ShieldAlert className="w-4 h-4" />
-                Admin
-              </button>
+            <div className="hidden sm:block">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 bg-slate-100 dark:bg-zinc-950 p-1.5 rounded-2xl">
+                <button
+                  onClick={() => setLoginRole('farmer')}
+                  className={`py-2 text-xs font-semibold rounded-xl cursor-pointer transition-all flex flex-col items-center justify-center gap-1 ${
+                    loginRole === 'farmer' 
+                      ? 'bg-white dark:bg-zinc-850 text-primary-green shadow-sm' 
+                      : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100'
+                  }`}
+                >
+                  <Leaf className="w-4 h-4" />
+                  Farmer
+                </button>
+                <button
+                  onClick={() => setLoginRole('company')}
+                  className={`py-2 text-xs font-semibold rounded-xl cursor-pointer transition-all flex flex-col items-center justify-center gap-1 ${
+                    loginRole === 'company' 
+                      ? 'bg-white dark:bg-zinc-850 text-corporate-blue shadow-sm' 
+                      : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100'
+                  }`}
+                >
+                  <Building2 className="w-4 h-4" />
+                  Company
+                </button>
+                <button
+                  onClick={() => setLoginRole('admin')}
+                  className={`py-2 text-xs font-semibold rounded-xl cursor-pointer transition-all flex flex-col items-center justify-center gap-1 ${
+                    loginRole === 'admin' 
+                      ? 'bg-white dark:bg-zinc-850 text-amber-500 shadow-sm' 
+                      : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100'
+                  }`}
+                >
+                  <ShieldAlert className="w-4 h-4" />
+                  Admin
+                </button>
+              </div>
             </div>
 
             {/* Auth Method Toggles */}

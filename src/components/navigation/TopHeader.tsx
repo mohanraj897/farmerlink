@@ -238,36 +238,6 @@ export const TopHeader: React.FC<TopHeaderProps> = ({ activeTab, setActiveTab, m
             </button>
           </div>
 
-          <div className="mt-4 grid grid-cols-3 gap-2">
-            <button
-              onClick={() => {
-                handleRoleChange('farmer');
-                toggleMobileMenu();
-              }}
-              className="rounded-2xl px-2 py-2 text-xs font-semibold text-slate-800 bg-emerald-100 dark:bg-emerald-950/40 hover:bg-emerald-200"
-            >
-              Farmer
-            </button>
-            <button
-              onClick={() => {
-                handleRoleChange('company');
-                toggleMobileMenu();
-              }}
-              className="rounded-2xl px-2 py-2 text-xs font-semibold text-slate-800 bg-blue-100 dark:bg-blue-950/40 hover:bg-blue-200"
-            >
-              Company
-            </button>
-            <button
-              onClick={() => {
-                handleRoleChange('admin');
-                toggleMobileMenu();
-              }}
-              className="rounded-2xl px-2 py-2 text-xs font-semibold text-slate-800 bg-amber-100 dark:bg-amber-950/40 hover:bg-amber-200"
-            >
-              Admin
-            </button>
-          </div>
-
           <button
             onClick={() => {
               logout();
